@@ -1,0 +1,478 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --text-color:#161616;
+    --hover-color:hsl(0, 0%, 14%);
+    --bg-color:#fff;
+}
+html::-webkit-scrollbar
+{
+    width: 0.5rem;
+    background: #2e2e2e;
+}
+html::-webkit-scrollbar-thumb
+{
+    border-radius: 2rem;
+    background: var(--bg-color);
+}
+img{
+    width: 100%;
+}
+body
+{
+    background:#fff;
+}
+.main
+{
+    overflow-x: hidden;
+}
+section
+{
+    padding: 4rem 0 3rem;
+}
+.contanier
+{
+    margin: auto;
+    max-width: 968px;
+    width: 100%;
+}
+header
+{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+header.shadow
+{
+    background: var(--bg-color);
+    box-shadow: 1px 2px 4px rgb(15 54 55 / 10%);
+    transition: 0.2s;
+}
+.logo img
+{
+    width: 41px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+#menu-icon
+{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+.navbar
+{
+   display: flex;
+   column-gap: 2rem;
+   list-style: none;
+}
+.navbar a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+   background: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    --webkit-background-clip: text;
+    background-clip: text;
+    color: black;
+   
+}
+.navbar a:hover
+{
+   color: var(--text-color);
+    
+}
+.home-content
+{
+    min-height: 640px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.home-text h1
+{
+    text-transform: capitalize;
+    font-size: 3.4rem;
+   margin-bottom: 3.4rem;
+   color:black;
+}
+.home-text p
+{
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+}
+.home-text .btn
+{
+    padding: 16px 24px;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    column-gap: 0.5rem;
+    background: black;
+    border-radius: 0.5rem;
+    transition: 0.5s all linear;
+    font-size: 1.2rem;
+}
+.home-text .btn:hover
+{
+    background: #333;
+    transition: 0.5s all linear;
+}
+.heading
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    --webkit-background-clip:text;
+    background-clip:text;
+    margin-bottom: 2rem;
+}
+.spaces-contnaier{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+.space-details
+{
+    display: grid;
+    row-gap: 1.4rem;
+}
+
+.space-details .fa-battery-full
+{
+    font-size: 1.6rem;
+}
+.space-details .fa-headphones
+{
+    font-size: 1.6rem;
+}
+.space-details .box h3
+{
+    font-size:1rem;
+    text-transform: uppercase;
+}
+.space-details .box  p
+{
+    margin-bottom: 0.5rem;
+    color: #333333a4;
+    text-transform: capitalize;
+}
+.shop-contanier
+{
+    display: grid;
+    grid-template-columns: repeat(3, 164px);
+    justify-content: center;
+    gap: 3rem;
+}
+.shop-contanier .box
+{
+    position: relative;
+    padding: 10px;
+    background: var(--bg-color);
+    box-shadow:0 5px 8px rgb(15 54 55 / 10%);
+    border-radius: 0.5rem;
+    height: 180px;
+    display: grid;
+}
+.shop-contanier .box img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+.shop-contanier .box h3
+{
+    font-size: 0.9rem;
+}
+.shop-contanier .box span
+{
+    font-weight: 500;
+}
+.shop-contanier .fa-bag-shopping
+{
+    position: absolute;
+    bottom: 0.8rem;
+    right: 0.8rem;
+    padding: 10px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+}
+.shop-contanier .fa-bag-shopping:hover
+{
+    background: #333;
+    cursor: pointer;
+}
+.buds-contanier
+{
+    display: grid;
+    grid-template-columns: 250px max-content;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4rem;
+    background: var(--hover-color);
+    color: var(--bg-color);
+    border-radius: 1rem;
+}
+.buds-img img
+{
+    width: 320px;
+}
+.buds-text h2
+{
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.buds-text span
+{
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+.buds-text p
+{
+    margin: 1rem 0 1rem;
+    text-transform: capitalize;
+}
+.buds-text .btn
+{
+    padding: 16px 24px;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    column-gap: 0.5rem;
+    background: black;
+    border-radius: 0.5rem;
+    transition: 0.5s all linear;
+    font-size: 1.2rem;
+}
+.buds-text .btn:hover
+{
+    background: #333;
+}
+.footer
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+    gap: 1rem;
+}
+.footer-box
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer-box h2
+{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom:1rem;
+}
+.footer-box a
+{
+    color: var(--text-color);
+    margin-bottom: 4px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footer-box a:hover
+{
+    color: #403e3e9f;
+}
+.social
+{
+    display: flex;
+    column-gap:1rem;
+}
+.social .fa-brands
+{
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.social .facebook
+{
+    color: var(--bg-color);
+}
+.social .facebook:hover
+{
+   background: #4267B2;
+   transition: 0.4s all linear;
+}
+.social .twitter
+{
+    color: var(--bg-color);
+}
+.social .twitter:hover
+{
+   background: #1da1f2;
+   transition: 0.4s all linear;
+}
+.social .instagram
+{
+    color: var(--bg-color);
+}
+.social .instagram:hover
+{
+   background:#E4405F ;
+   transition: 0.4s all linear;
+}
+.social .youtube
+{
+    color: var(--bg-color);
+}
+.social .youtube:hover
+{
+   background:red ;
+   transition: 0.4s all linear;
+}
+.copyright
+{
+    text-align: center;
+}
+@media (max-width:1080px) {
+    section
+    {
+        padding: 50px;
+    }
+    .home-text h1
+    {
+        font-size: 3rem;
+    }
+}
+@media (max-width:768px) {
+    .logo img
+    {
+        width: 30px;
+    }
+    #menu-icon
+    {
+        display: initial;
+        z-index: 150;
+    }
+    .navbar
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 5px 8px rgb(15 54 55 / 10%);
+        clip-path:circle(0% at 50% 0);
+        transition: 0.5s;
+    }
+    .navbar a
+    {
+        display: block;
+        padding: 12px;
+    }
+    .navbar.active
+    {
+        clip-path: circle(144% at 50% 0);
+    }
+    .home-text h1
+    {
+        font-size: 2rem;
+    }
+    p
+    {
+        font-size: 0.875rem;
+    }
+    .btn
+    {
+        padding: 15px 16px;
+    }
+    .heading
+    {
+        font-size:2.4rem;
+    }
+
+}
+
+@media (max-width:684px) {
+    .home-content,
+    .spaces-contnaier,
+    .buds-contanier
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .buds-text
+    {
+        padding: 1.4rem;
+    }
+    .home-content
+    {
+        min-height: 540px;
+    }
+    .specs-img
+    {
+        padding-top: 2rem;
+    }
+    .shop-contanier
+    {
+        grid-template-columns: repeat(2, 164px);
+        gap: 1rem;
+    }
+}
+
+@media (max-width:360px) {
+    .nav
+    {
+        padding: 4px;
+    }
+    .home-text h1
+    {
+        font-size: 1.8rem;
+    }
+    .heading
+    {
+        font-size: 2rem;
+    }
+    .shop-contanier
+    {
+        grid-template-columns: repeat(2, 144px);
+    }
+}
+@media (max-width:300px) {
+    .shop-contanier
+    {
+        grid-template-columns: repeat(1, 144px);
+    }
+    .buds-text
+    {
+        padding: 4.4rem;
+    }
+}
